@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // Runs code when HTML ready
+  // Runs code when DOM ready (HTML structure built)
   // When there is change on switch (button clicked) the function runs
   $("#switch").on("change", function () {
     // Toggles the CSS class
