@@ -1,0 +1,102 @@
+/* URL for Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Applies to the entire page */
+* {
+  font-family: "Poppins";
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Applies to the body of the page */
+body {
+  background: url("https://i.pinimg.com/1200x/c5/8f/fc/c58ffc0ab9c820a7325c3807321b861e.jpg")
+    no-repeat center fixed; /* The background image */
+  background-size: cover; /* Covers the entire page */
+  min-height: 100vh;
+  display: flex; /* Dynamic, easy alignment, flexible */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Applies to the container or wrapper */
+.container {
+  width: 90%; 
+  max-width: 800px;
+  background-color: white;
+  border-radius: 30px; /* Rounds the corner */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Adds a 10% opacity black shadow around the box */
+  padding: 60px 40px;
+  align-items: center;
+  transition: all 2s ease-in-out; /* Adds an in-n-out effect for 2s after countdown ends */
+}
+
+/* Applies to the header "Countdown" */
+.container h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333;
+  transition: all 1.5s ease; /* Adds a 1.5s transition after countdown ends */
+}
+
+/* Applies to the countdown group */
+.countdownRow {
+  display: flex; /* Dynamic, easy alignment, flexible */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  transition: all 1.5s ease; /* Adds a 1.5s transition after countdown ends */
+}
+
+/* Applies to each individual time block (days, hours, minutes, seconds) */
+.timeBlock {
+  display: flex; /* Dynamic, easy alignment, flexible */
+  flex-direction: column; /* Flexes vertically (top to bottom) */
+  align-items: center;
+  min-width: 90px; 
+}
+
+/* Applies to the digit in each individual time block */
+.timeBlock span {
+  font-size: 50px; 
+  font-weight: 700; 
+  color: rgb(85, 48, 2);
+}
+
+/* Applies to the text indicator in each individual time block */
+.timeBlock small {
+  font-size: 14px;
+  color: rgb(85, 48, 2);
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Applies to the separator (:) */
+.colon {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 35px;
+}
+
+/* The added class for urgent (the red glow in the last minute) */
+.urgent {
+  color: #831818; /* Font changes to red */
+  text-shadow: 0 0 15px rgba(224, 55, 55, 0.4); /* Adds a red glow around the font */
+}
+
+/* The added class for the transformed container after countdown ends */
+.container.containerAfter {
+  background-color: rgb(57, 44, 34); /* Container color changes to brown */
+  transform: scale(1.05); /* Scales increase by 1.05 */
+}
+
+/* The added class for the transformed text (countdown and header) after countdown ends */
+.countdownRow.textAfter,
+.header.textAfter {
+  color: white; /* Text color changes to white */
+}

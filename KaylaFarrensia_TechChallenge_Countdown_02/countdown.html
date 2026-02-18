@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- The container or wrapper of the countdown -->
+      <h2 class="header">Countdown🌼</h2>
+      <!-- The header -->
+      <div class="countdownRow">
+        <!-- The countdown (days, hours, minutes, seconds) grouped and assigned to a class -->
+        <!-- The time block for days, default at 0, and the small text underneath it to indicate that it is the number of days -->
+        <div class="timeBlock"><span id="days">0</span><small>DAYS</small></div>
+        <div class="colon">:</div>
+        <!-- The separator from days to hours -->
+        <!-- The time block for hours, default at 0, and the small text underneath it to indicate that it is the number of hours -->
+        <div class="timeBlock">
+          <span id="hours">0</span><small>HOURS</small>
+        </div>
+        <div class="colon">:</div>
+        <!-- The separator from hours to minutes -->
+        <!-- The time block for minutes, default at 0, and the small text underneath it to indicate that it is the number of minutes -->
+        <div class="timeBlock">
+          <span id="minutes">0</span><small>MINUTES</small>
+        </div>
+        <div class="colon">:</div>
+        <!-- The separator from minutes to seconds -->
+        <!-- The time block for seconds, default at 0, and the small text underneath it to indicate that it is the number of seconds -->
+        <div class="timeBlock">
+          <span id="seconds">0</span><small>SECONDS</small>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
