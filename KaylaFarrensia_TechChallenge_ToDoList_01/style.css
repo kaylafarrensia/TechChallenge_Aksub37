@@ -1,0 +1,113 @@
+/* URL for Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Applies to the entire page */
+* {
+  text-align: center;
+  font-family: "Poppins";
+}
+
+/* Applies to the body of the page */
+body {
+  background: url(https://i.pinimg.com/736x/70/ff/0c/70ff0c3e0cb9bcb6f6a3a6e625e3fd3c.jpg)
+    no-repeat; /* The background image */
+  background-size: cover; /* Background covers entire page */
+  background-position: center; /* Centers background */
+  display: flex; /* Dynamic, easy alignment, flexible */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Applies to the container or wrapper */
+.container {
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  max-width: 400px; /* Prevents container from getting too wide */
+  margin: 50px auto; /* Centers container */
+  padding: 30px;
+  border-radius: 20px; /* Rounds corners */
+  text-align: center; /* Centers text */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adds a 10% black shadow around the container */
+}
+
+/* Applies to the header "To-Do" */
+.container h2 {
+  top: 200px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Applies to the task list */
+.taskList {
+  padding-top: 10px;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+/* Applies to the individual task item */
+.taskItem {
+  display: flex; /* Dynamic, easy alignment, flexible */
+  justify-content: space-between; /* Text on the left, trash on the right */
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddd; /* Adds a thin border around each task */
+  border-left: 7px solid #c8688b; /* Adds an accent color on the left */
+  overflow: hidden; /* Prevents content from spilling due to overflow */
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px; /* Rounds corners */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05); /* Adds a 5% black shadow around the wrapper for each task */
+  transition: transform 0.2s; /* Adds a transition for task interaction */
+  font-size: 12px;
+}
+
+/* Applies to the task text */
+.taskText {
+  text-align: left; /* Aligns text to the left */
+  flex-grow: 1; /* Forces the span to fill the gap between */
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+/* Applies to the task checkbox when checked and task text */
+.taskCheckbox:checked + .taskText {
+  text-decoration: line-through; /* Adds a strikethrough */
+  color: rgb(95, 21, 35); /* Changes task text color */
+}
+
+/* Applies to field input container */
+.container #to-do {
+  width: 364px;
+}
+
+/* Applies to the delete class */
+.delete {
+  background-color: #edd5d9;
+  width: 25px;
+  height: 25px;
+  align-self: stretch; /* Stretches the pink bar to the full height of the card */
+  display: flex; /* Dynamic, easy alignment, flexible */
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; /* Rounds corners */
+}
+
+/* Applies to the trash icon */
+.delete a {
+  font-size: 40px;
+}
+
+/* Applies to the input field */
+.container input {
+  border-radius: 50px; /* Rounds corners */
+  border: 1px solid rgb(127, 82, 82); /* Adds border */
+  background-color: #fbeaed;
+}
+
+/* Applies to add button */
+.container button {
+  border-radius: 20px; /* Rounds corners */
+  border: 1px solid rgb(127, 82, 82); /* Adds border */
+  color: #481e27;
+  background-color: #fbeaed;
+}
