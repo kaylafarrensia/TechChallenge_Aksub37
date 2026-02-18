@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">Logo</h2>
+      <!-- Logo -->
+      <nav class="navigation">
+        <!-- Navigations -->
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <button class="loginButton">Register</button>
+        <!-- Register -->
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <!-- The wrapper or container -->
+      <form id="form" class="form">
+        <!-- A class for the form -->
+        <h2>Register</h2>
+        <!-- The header -->
+        <div class="column">
+          <!-- The column classes: username, email, gender -->
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            class="inputForm"
+          />
+          <!-- Input field for username -->
+          <span id="usernameError" class="errorMsg"></span>
+          <!-- Error message span for username -->
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            class="inputForm"
+          />
+          <!-- Input field for email -->
+          <span id="emailError" class="errorMsg"></span>
+          <!-- Error message span for email -->
+          <!-- Select (dropdown) field for gender -->
+          <select id="gender" placeholder="Gender" class="inputForm">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <span id="genderError" class="errorMsg"></span>
+          <!-- Error message span for gender -->
+        </div>
+        <div class="row">
+          <!-- The row classes: age, date of birth -->
+          <div class="field">
+            <!-- Groups individual row classes to another class: field -->
+            <!-- Input field for age -->
+            <input
+              type="number"
+              id="age"
+              name="age"
+              placeholder="Age"
+              class="inputForm age"
+            />
+            <span id="ageError" class="errorMsg"></span>
+            <!-- Error message span for age -->
+          </div>
+          <!-- Input field for date of birth -->
+          <div class="field">
+            <input type="date" id="DOB" name="DOB" class="inputForm dob" />
+            <span id="dobError" class="errorMsg"></span>
+            <!-- Error message span for date of birth -->
+          </div>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="submitButton">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
