@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Hanken Grotesk";
+}
+
+.wrapper {
+  padding-top: 140px;
+  text-align: center;
+  position: relative;
+}
+
+.wrapper h2 {
+  font-size: 36px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.wrapper h5 {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: medium;
+  color: #878787;
+  margin-top: -20px;
+}
+
+.loginForm {
+  margin-left: -100px;
+}
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin-left: 650px;
+  margin-bottom: 10px;
+}
+
+.inputForm label {
+  margin-bottom: 8px;
+}
+
+.inputForm input {
+  justify-content: space-between;
+  width: 400px;
+  height: 20px;
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 1px solid #878787;
+}
+
+.submitLogin {
+  position: relative;
+  margin-top: 15px;
+  align-items: center;
+  margin-left: 100px;
+  width: 420px;
+  height: 40px;
+  justify-content: space-between;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+}
+
+.loginForm h5 {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.regisPage {
+  color: #ff954a;
+}
